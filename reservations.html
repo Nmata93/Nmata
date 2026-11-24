@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--Nichole Mata phase 4-->
+<html lang="en">
+
+<head>
+    <title>Starlight Haven Bed and Breakfast | Reservations</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Make a reservation for your stay at Starlight Haven Bed and Breakfast.">
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+<!--Start Body-->
+
+<body>
+    <div id="wrapper">
+        <!--Start Header-->
+        <header>
+            <h1>Starlight Haven Bed and Breakfast</h1>
+        </header>
+        <!--End Header-->
+        <!--Start Navigation-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms/Midnight_Whisper_Suite.html">Midnight Whisper Suite</a></li>
+                <li><a href="rooms/Moonlight_Ridge_Suite.html">Moonlight Ridge Suite</a></li>
+                <li><a href="events/Starlight_Events.html">Events and Experiences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+            </ul>
+        </nav>
+        <!--End Navigation-->
+        <!--Main Content-->
+        <main>
+            <h2>Make a Reservation</h2>
+            <p>Plan your stay at Starlight Haven Bed and Breakfast. Complete the reservation form below to select your
+                stay information, suite, and additional experiences.</p>
+
+            <!--Suite Rates Table-->
+            <h3>Suite Rates</h3>
+
+            <table>
+                <tr>
+                    <th>Rate</th>
+                    <th>Midnight Whisper Suite</th>
+                    <th>Moonlight Ridge Suite</th>
+                </tr>
+                <tr>
+                    <td>Weekday</td>
+                    <td>$195 per night</td>
+                    <td>$185 per night</td>
+                </tr>
+                <tr>
+                    <td>Weekend</td>
+                    <td>$215 per night</td>
+                    <td>$205 per night</td>
+                </tr>
+                <tr>
+                    <td>Holiday</td>
+                    <td>$240 per night</td>
+                    <td>$230 per night</td>
+                </tr>
+                <tr>
+                    <td>Weekly</td>
+                    <td>$1,080 per week</td>
+                    <td>$1,020 per week</td>
+                </tr>
+                <tr>
+                    <td>Occupancy</td>
+                    <td>2 guests</td>
+                    <td>2 guests</td>
+                </tr>
+            </table>
+            <!--End Suite Rates Table-->
+
+            <!--Reservation Form-->
+            <form method="post">
+
+                <!--Guest Information-->
+                <h3>Guest Information</h3>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+
+                <!--Stay Information-->
+                <h3>Stay Information</h3>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="checkIn">Check-In Date:</label>
+                        <input type="date" id="checkIn" name="checkIn">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="checkOut">Check-Out Date:</label>
+                        <input type="date" id="checkOut" name="checkOut">
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="guests">Number of Guests:</label>
+                    <select id="guests" name="guests">
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                    </select>
+                </div>
+                <!--Suite Selection-->
+                <h3>Select Your Suite</h3>
+
+                <div class="form-option">
+                    <input type="radio" id="midnightWhisper" name="suite" value="Midnight Whisper Suite">
+                    <label for="midnightWhisper">Midnight Whisper Suite</label>
+                </div>
+
+                <div class="form-option">
+                    <input type="radio" id="moonlightRidge" name="suite" value="Moonlight Ridge Suite">
+                    <label for="moonlightRidge">Moonlight Ridge Suite</label>
+                </div>
+
+                <!--Experiences-->
+                <h3>Choose Your Experiences</h3>
+
+                <div class="form-option">
+                    <input type="checkbox" id="birdWalk" name="experience" value="Morning Bird Walk">
+                    <label for="birdWalk">Morning Bird Walk</label>
+                </div>
+
+                <div class="form-option">
+                    <input type="checkbox" id="owlWalk" name="experience" value="Twilight Owl Walk">
+                    <label for="owlWalk">Twilight Owl Walk</label>
+                </div>
+
+                <div class="form-option">
+                    <input type="checkbox" id="stargazing" name="experience" value="Fireside Stargazing">
+                    <label for="stargazing">Fireside Stargazing</label>
+                </div>
+                <!--Special Requests-->
+                <h3>Special Requests</h3>
+
+                <label for="requests">Please tell us about any special requests for your stay:</label>
+                <textarea id="requests" name="requests" rows="5" cols="40"></textarea>
+
+                <!--Submit Button-->
+                <p>
+                    <input type="submit" value="Submit Reservation">
+                </p>
+
+            </form>
+            <!--End Reservation Form-->
+
+        </main>
+        <!--End Main-->
+
+        <!--Start Footer-->
+        <footer>
+            Copyright &copy; 2026<br>
+            <a href="mailto:n0446016@amarillocollege.com">Nichole Mata</a>
+        </footer>
+        <!--End Footer-->
+
+    </div>
+    <!--End div-->
+</body>
+<!--End Body-->
+
+</html>
+<!--Ending HTML PAGE-->
